@@ -1,0 +1,27 @@
+.did-page-body {
+  min-height: @didBodyHeightMin;
+  margin-bottom: @didSectionSpacing;
+  /*position: relative;*/
+  .did-page-body-outer {
+    display: table;
+    min-height: @didBodyHeightMin;
+
+    .did-page-body-inner {
+      height: 75%;
+      display: table-cell;
+      vertical-align: middle;
+
+    }
+  }
+
+  .did-instructions {
+    p {
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+

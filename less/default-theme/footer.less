@@ -1,0 +1,79 @@
+.did-page-footer {
+  min-height: @didFooterHeightMin;
+
+  #did-powerby {
+    text-align: left;
+  }
+
+  #did-tagline {
+    padding: 10px 50px 0;
+    text-align: center;
+    margin: 0;
+    font-size: 0.8em;
+  }
+
+  #did-faq {
+    text-align: right;
+    padding-top: 10px;
+  }
+}
+
+#did-stages {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: @didProgressTickerSize;
+
+  .did-ticker-container {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    color: @didProgressTickerColor;
+    border: 2px solid @didProgressTickerBorderColor;
+    background-color: @didProgressTickerBackgroundColor;
+    border-radius: @didBorderRadius;
+    margin: 0 2px;
+
+    .did-ticker-container-inner {
+      display: table;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+
+      i {
+        font-size: 1.1em;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    &.did-ticker-active {
+      color: @didProgressTickerActiveColor;
+      border-color: @didProgressTickerActiveBorderColor;
+      background-color: @didProgressTickerActiveBackgroundColor;
+      box-shadow: @didProgressTickerActiveRaisedShadow;
+    }
+
+    &.did-ticker-completed {
+      color: @didProgressTickerCompleteColor;
+      border-color: @didProgressTickerCompleteBackgroundColor;
+      background-color: @didProgressTickerCompleteBorderColor;
+      box-shadow: @didProgressTickerCompleteRaisedShadow;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: @didButtonRaisedShadow;
+      }
+
+      &[disabled]:hover {
+        cursor: default;
+        box-shadow: none;
+      }
+    }
+
+  }
+}
+
+
+
+

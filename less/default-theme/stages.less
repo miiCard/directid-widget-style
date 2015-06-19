@@ -1,0 +1,165 @@
+&.did-verify {
+  .did-page-body {
+    .did-start {
+      padding-top: @didSectionSpacing * 1.5;
+      padding-bottom: @didSectionSpacing;
+    }
+
+    .did-btn-start {
+      width: 75%;
+      max-width: 300px;
+      min-width: 200px;
+      height: 50px;
+      font-size: 1.25em;
+    }
+
+    .did-alert {
+      margin-top: 20px;
+    }
+  }
+}
+
+&.did-selectbank {
+  .did-page-body {
+    .did-bank-select-form {
+      .did-bank-select-group {
+        .did-bank-search {
+          .dropdown-menu {
+            border-radius: @didBorderRadius;
+            margin-top: 0;
+          }
+        }
+
+        .did-popular-banks {
+          padding: 2px 0 0 50px;
+          font-size: 0.8em;
+          color: @didColorLightGrey;
+
+          ul {
+            padding-left: 0;
+            list-style: none;
+            li {
+              padding: 5px 0 0 15px;
+              list-style: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+&.did-banklogin {
+
+  .did-page-body {
+    #did-credentials {
+      margin: 0 0 30px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+  }
+}
+
+&.did-processing {
+  .did-page-body {
+    padding-top: @didSectionSpacing;
+    padding-bottom: @didSectionSpacing;
+
+    .did-progress-status {
+      text-align: center;
+
+      .alert-info {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    }
+
+    .did-progress {
+      small {
+        font-size: 0.8em;
+        color: @didColorGrey;
+      }
+    }
+  }
+}
+
+&.did-bureau {
+  .did-additional-info {
+    margin-top: 10px;
+  }
+
+  .did-address-helper {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+
+  .did-pca-full-address {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .did-pca-full-address-manual {
+    margin-bottom: 0;
+  }
+
+  .did-address-controls {
+    padding-left: 2px;
+    font-size: 0.8em;
+    margin-top: 2px;
+    font-weight: normal;
+    color: @didColorLightGrey;
+  }
+}
+
+&.did-verificationcomplete {
+
+  .did-page-body {
+    margin-bottom: 0;
+    padding-top: @didSectionSpacing * 2;
+    padding-bottom: @didSectionSpacing;
+
+    .did-success-message {
+      text-align: center;
+
+      .did-success-message-label {
+        margin: 0 auto;
+        color: @didColorWhite;
+        background-color: @didButtonSuccessColor;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 6px 6px;
+        line-height: 1.5;
+        border-radius: @didBorderRadius;
+        width: 75%;
+        max-width: 300px;
+        min-width: 200px;
+      }
+    }
+
+    .did-success-detail {
+      p {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 0.9em;
+      }
+    }
+
+    .did-success-faq {
+      text-align: center;
+      font-size: 0.9em;
+    }
+  }
+}
+
+&.did-error {
+  .did-page-body {
+    .did-messages {
+      margin-top: @didSectionSpacing * 2;
+    }
+  }
+
+}

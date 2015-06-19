@@ -1,0 +1,192 @@
+/*region Colors*/
+/*region Brand */
+@didColorBrandPrimary: ' ';
+@didColorBrandPrimaryLight: ' ';
+@didColorBrandPrimaryLighter: ' ';
+@didColorBrandPrimaryLightest: ' ';
+@didColorBrandPrimaryDark: ' ';
+@didColorBrandPrimaryDarker: ' ';
+@didColorBrandPrimaryDarkest: ' ';
+
+@didColorBrandSecondary: ' ';
+@didColorBrandSecondaryLight: ' ';
+@didColorBrandSecondaryLighter: ' ';
+@didColorBrandSecondaryLightest: ' ';
+@didColorBrandSecondaryDark: ' ';
+@didColorBrandSecondaryDarker: ' ';
+@didColorBrandSecondaryDarkest: ' ';
+/*endregion*/
+/*region Links */
+@didColorLink: @didColorBrandPrimary;
+@didColorLinkHover: @didColorBrandSecondary;
+/*endregion*/
+/*region Validation */
+//Success
+@didColorSuccess: ' ';
+@didColorSuccessLight: ' ';
+@didColorSuccessLighter: ' ';
+@didColorSuccessLightest: ' ';
+@didColorSuccessDark: ' ';
+@didColorSuccessDarker: ' ';
+@didColorSuccessDarkest: ' ';
+@didColorSuccessDesaturated: ' ';
+
+//Warning
+@didColorWarning: ' ';
+@didColorWarningLight: ' ';
+@didColorWarningLighter: ' ';
+@didColorWarningLightest: ' ';
+@didColorWarningDark: ' ';
+@didColorWarningDarker: ' ';
+@didColorWarningDarkest: ' ';
+@didColorWarningDesaturated: ' ';
+
+//Error
+@didColorError: ' ';
+@didColorErrorLight: ' ';
+@didColorErrorLighter: ' ';
+@didColorErrorLightest: ' ';
+@didColorErrorDark: ' ';
+@didColorErrorDarker: ' ';
+@didColorErrorDarkest: ' ';
+@didColorErrorDesaturated: ' ';
+
+//Info
+@didColorInfo: ' ';
+@didColorInfoLight: ' ';
+@didColorInfoLighter: ' ';
+@didColorInfoLightest: ' ';
+@didColorInfoDark: ' ';
+@didColorInfoDarker: ' ';
+@didColorInfoDarkest: ' ';
+@didColorInfoDesaturated: ' ';
+
+/*endregion*/
+/*region Grey Scale*/
+@didColorBlack: #000;
+@didColorDarkestGrey: #222;
+@didColorDarkGrey: #333;
+@didColorGrey: #666;
+@didColorLightGrey: #999;
+@didColorLighterGrey: #ccc;
+@didColorLightestGrey: #eee;
+@didColorOffWhite: #f6f6f6;
+@didColorWhite: #fff;
+/*endregion*/
+/*endregion*/
+
+/*region Layout*/
+@didHeightMin: 210px;
+@didHeaderHeightMin: 60px;
+@didSectionSpacing: 15px;
+@didBodyHeightMin: 150px;
+@didFooterHeightMin: 50px;
+@didMessagesHeightMin: 20px;
+/*endregion*/
+
+/*region Borders */
+@didBorderRadius: 2px;
+/*endregion*/
+
+/*region Buttons */
+//Primary
+@didButtonPrimaryColor: @didColorBrandPrimary;
+@didButtonPrimaryTextColor: ' ';
+@didButtonPrimaryBorderColor: @didButtonPrimaryColor;
+
+@didButtonPrimaryHoverColor: @didColorBrandPrimaryDark;
+@didButtonPrimaryHoverTextColor: ' ';
+@didButtonPrimaryHoverBorderColor: @didButtonPrimaryHoverColor;
+
+@didButtonPrimaryFocusColor: @didColorBrandPrimaryDarker;
+@didButtonPrimaryFocusTextColor: ' ';
+@didButtonPrimaryFocusBorderColor: @didButtonPrimaryFocusColor;
+
+//Success
+@didButtonSuccessColor: #a0ba43;
+@didButtonSuccessTextColor: @didColorWhite;
+@didButtonSuccessBorderColor: #a0ba43;
+
+@didButtonSuccessHoverColor: @didColorSuccessDark;
+@didButtonSuccessHoverTextColor: ' ';
+@didButtonSuccessHoverBorderColor: @didButtonSuccessHoverColor;
+
+@didButtonSuccessFocusColor: @didColorSuccessDarker;
+@didButtonSuccessFocusTextColor: ' ';
+@didButtonSuccessFocusBorderColor: @didButtonSuccessFocusColor;
+
+//Material
+@didButtonRaisedShadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+@didButtonRaisedPressedShadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+/*endregion*/
+
+/*region Forms */
+@didDropdownColor: @didColorWhite;
+@didDropdownTextColor: @didColorDarkGrey;
+@didDropdownHoverColor: @didColorBrandPrimaryLight;
+@didDropdownHoverTextColor: @didColorWhite;
+
+@didFormControlColor: @didColorDarkGrey;
+@didFormControlBackgroundColor : @didColorWhite;
+@didFormControlBorderColor: @didColorLighterGrey;
+@didFormControlFocusBorder: @didColorBrandPrimary;
+@didFormControlFocusShadow: inset 0 1px 1px fade(@didColorBlack, 7.5%), 0 0 8px fade(@didColorWhite, 60%);
+@didFormControlWarningShadow: inset 0 1px 1px fade(@didColorBlack, 7.5%), 0 0 8px fade(#ffd746, 80%);
+@didFormControlWarningFocusShadow: inset 0 1px 1px fade(@didColorBlack, 7.5%), 0 0 8px fade(#ffd746, 60%);
+
+@didInputGroupAddonLinkColor: @didColorLightGrey;
+@didInputGroupAddonLinkHoverColor: @didColorGrey;
+
+@didInputGroupAddonBackgroundColor: @didFormControlBackgroundColor;
+@didInputGroupAddonWarningBackgroundColor: @didInputGroupAddonBackgroundColor;
+
+@didChoiceBorderColor: @didColorLighterGrey;
+@didChoiceBorderRadius: 4px;
+/*endregion*/
+
+/* region Loaders */
+@didLoaderColor: @didColorLightGrey;
+@didLoaderInverseColor: @didColorWhite;
+@didLoaderTrackColor: fade(@didColorGrey, 25%);
+@didLoaderInverseTrackColor: fade(@didColorWhite, 25%);
+/*endregion*/
+
+/*region Progress */
+@didProgressBarColor: @didColorBrandPrimary;
+@didProgressBarBackgroundColor: @didColorOffWhite;
+
+@didProgressTickerSize: 0.9em;
+
+@didProgressTickerColor: @didColorWhite;
+@didProgressTickerBorderColor: @didColorLightestGrey;
+@didProgressTickerBackgroundColor: @didColorLightestGrey;
+
+@didProgressTickerActiveColor: @didColorWhite;
+@didProgressTickerActiveBorderColor: @didColorLighterGrey;
+@didProgressTickerActiveBackgroundColor: @didColorLighterGrey;
+@didProgressTickerActiveRaisedShadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.03);
+
+@didProgressTickerCompleteColor: @didColorWhite;
+@didProgressTickerCompleteBorderColor: @didColorSuccess;
+@didProgressTickerCompleteBackgroundColor: @didColorSuccess;
+@didProgressTickerCompleteRaisedShadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.03);
+
+/*endregion*/
+
+/*region Modal*/
+@didColorModalBlackout: rgba(255, 255, 255, 0.5);
+@didColorModalBackground: @didColorWhite;
+@didModalWidth: 250px;
+/*endregion*/
+
+/*region Images*/
+@didLoadingGif: "https://directidcdn.blob.core.windows.net/resources/0.0.11/images/loading.gif";
+//fallback only
+/*endregion*/
+
+/*Region Misc*/
+@didToolTipColor: @didColorLightGrey;
+@didToolTipBorderColor: @didColorLightGrey;
+@didToolTipBackgroundColor: transparent;
+/*endregion*/

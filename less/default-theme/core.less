@@ -1,0 +1,52 @@
+a {
+  color: @didColorBrandPrimary;
+  text-decoration: none;
+
+  &:hover {
+    color: @didColorBrandSecondary;
+  }
+}
+
+.stack-fix {
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.label {
+  border-radius: @didBorderRadius;
+}
+
+.label-success {
+  background-color: @didColorSuccess;
+  border-color: @didColorSuccess;
+
+}
+
+.tooltip {
+  .tooltip-inner {
+    color: @didToolTipColor;
+    background-color: @didToolTipBackgroundColor;
+    border-radius: @didBorderRadius;
+  }
+
+  &.top .tooltip-arrow {
+    border-top-color: @didToolTipBorderColor;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: @didToolTipBorderColor;
+  }
+
+  &.right .tooltip-arrow {
+    border-right-color: @didToolTipBorderColor;
+  }
+
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @didToolTipBorderColor;
+  }
+
+}
+

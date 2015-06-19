@@ -1,0 +1,63 @@
+.btn {
+  border-radius: @didBorderRadius;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-primary {
+  color: @didButtonPrimaryTextColor;
+  background-color: @didButtonPrimaryColor;
+  border-color: @didButtonPrimaryBorderColor;
+
+  &:hover {
+    color: @didButtonPrimaryHoverTextColor;
+    background-color: @didButtonPrimaryHoverColor;
+    border-color: @didButtonPrimaryHoverBorderColor;
+  }
+
+  &:focus {
+    color: @didButtonPrimaryFocusTextColor;
+    background-color: @didButtonPrimaryFocusColor;
+    border-color: @didButtonPrimaryFocusBorderColor;
+  }
+  &[disabled] {
+    opacity: 0.26;
+  }
+}
+
+.btn-success {
+  color: @didButtonSuccessTextColor;
+  background-color: @didButtonSuccessColor;
+  border-color: @didButtonSuccessColor;
+
+  &:hover {
+    color: @didButtonSuccessHoverTextColor;
+    background-color: @didButtonSuccessHoverColor;
+    border-color: @didButtonSuccessHoverBorderColor;
+  }
+
+  &:focus {
+    color: @didButtonPrimaryFocusTextColor;
+    background-color: @didButtonSuccessFocusColor;
+    border-color: @didButtonSuccessFocusBorderColor;
+  }
+  &[disabled] {
+    opacity: 0.26;
+
+  }
+}
+
+.did-btn-raised {
+  transition: box-shadow 0.1s;
+  box-shadow: @didButtonRaisedShadow;
+
+  &:focus {
+    box-shadow: @didButtonRaisedPressedShadow;
+  }
+
+  &[disabled] {
+    box-shadow: none;
+  }
+}

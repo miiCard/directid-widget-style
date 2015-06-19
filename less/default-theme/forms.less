@@ -1,0 +1,123 @@
+textarea {
+  &.form-control {
+    height: auto;
+
+    &[readonly] {
+      border: none;
+      overflow: hidden;
+      resize: none;
+
+      &:focus {
+        border-color: @didFormControlBorderColor;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.form-group {
+}
+
+.form-control {
+  color: @didFormControlColor;
+  border-color: @didFormControlBorderColor;
+  background-color: @didFormControlBackgroundColor;
+  height: auto;
+
+  &:focus {
+    border-color: @didFormControlFocusBorder;
+    box-shadow: @didFormControlFocusShadow;
+  }
+
+  &.min-pad {
+    padding: 6px 3px;
+  }
+}
+
+.input-group {
+  border-color: @didFormControlBorderColor;
+
+  .input-group-addon {
+    border-color: @didFormControlBorderColor;
+    background-color: @didInputGroupAddonBackgroundColor;
+
+    a {
+      color: @didInputGroupAddonLinkColor;
+
+      &:hover {
+        color: @didInputGroupAddonLinkHoverColor;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: @didDropdownColor;
+
+  li {
+    a {
+      color: @didDropdownTextColor;
+      cursor: pointer;
+
+      &:hover {
+        color: @didDropdownHoverTextColor;
+        background-color: @didDropdownHoverColor;
+      }
+
+    }
+    &.active a {
+      color: @didDropdownHoverTextColor;
+      background-color: @didDropdownHoverColor;
+    }
+  }
+}
+
+.did-selection-help {
+  font-size: 1.5em;
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  top: 5px;
+  z-index: 10;
+
+  &.did-valid-selection {
+    color: @didColorSuccess;
+  }
+
+  &.did-invalid-selection {
+    color: @didColorWarning;
+  }
+}
+
+.choice {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid @didChoiceBorderColor;
+  border-radius: @didChoiceBorderRadius;
+
+  .form-group {
+    margin: 0;
+  }
+
+  label{
+    font-weight:normal;
+  }
+
+  label.selected{
+    font-weight:bold;
+  }
+
+  &.has-warning {
+    border-color: @didColorWarning;
+  }
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+

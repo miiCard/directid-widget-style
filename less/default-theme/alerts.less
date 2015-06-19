@@ -1,0 +1,64 @@
+.did-messages {
+  line-height: 1.15em;
+}
+
+.did-alert {
+  padding: 10px;
+  font-size: 0.95em;
+  border-radius: @didBorderRadius;
+  text-align: center;
+}
+
+.alert-info {
+  border-color: @didColorInfoDesaturated;
+  background-color: @didColorWhite;
+  color: @didColorInfoDarkest;
+}
+
+.alert-success {
+  border-color: @didColorSuccessDesaturated;
+  background-color: @didColorSuccessDesaturated;
+  color: @didColorSuccessDarkest;
+}
+
+.alert-warning {
+  border-color: @didColorWarningDesaturated;
+  background-color: @didColorWarningDesaturated;
+  color: @didColorWarningDarkest;
+}
+
+.alert-danger {
+  border-color: @didColorErrorDesaturated;
+  background-color: @didColorErrorDesaturated;
+  color: @didColorErrorDarkest;
+}
+
+.has-warning {
+
+  .control-label {
+    color: inherit;
+  }
+
+  &.input-group {
+    border-color: @didColorWarning;
+    box-shadow: @didFormControlWarningShadow;
+  }
+
+  .input-group-addon {
+    border-color: @didColorWarning;
+    color: @didColorGrey;
+    background-color: @didInputGroupAddonWarningBackgroundColor;
+  }
+
+  .form-control,
+  &.form-control {
+    border-color: @didColorWarning;
+    border-radius: @didBorderRadius;
+
+    &:focus {
+      box-shadow: @didFormControlWarningFocusShadow;
+    }
+  }
+
+}
+

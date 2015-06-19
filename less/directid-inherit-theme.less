@@ -1,0 +1,10 @@
+@theme: 'inherit-theme'; //The theme to compile
+@baseTheme: 'default-theme'; //The base theme dir to iterate upon
+
+@import "@{baseTheme}/global.less"; //Selectors in this file WILL NOT be restricted to the widget
+
+#did { //Selectors in the following files WILL be restricted to the widget
+
+  //@import "lib.less"; //Libs are not used by these theme
+  @import "@{theme}/theme.less";
+}
