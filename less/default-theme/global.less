@@ -1,5 +1,8 @@
 //This file allows you to place css in the globabl scope either directly or through imports - use sparingly!
+@import "variables.less";//Call in our variables for use by global stylesheets
+
 @import (inline) "lib/address-3.40.css"; //We call the style for postcode anywhere here as the typeahead loads into the body of the page, not the widget
+@import "tooltips.less"; //This needs to be called here as tooltips are relative to the page
 
 
 

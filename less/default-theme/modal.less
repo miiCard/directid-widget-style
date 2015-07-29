@@ -1,29 +1,108 @@
-#did-modal-status {
+#did-modal-container {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background: @didColorModalBlackout;
+  background: @didModalBlackoutColor;
   z-index: 1000;
 
-  .did-modal-footer {
-    text-align: left;
-    margin-top: 0;
+  .did-modal-inner {
+  //  color:@didColorWhite;
+    background: @didModalBackgroundColor;
+    width: @didModalWidth;
+    height: @didModalMinHeight;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid @didModalBorderColor;
+    border-radius: @didBorderRadius;
+    box-shadow: @didModalShadow;
+
+
+    .did-modal-header{
+      margin-bottom:@didSectionSpacing;
+
+      h1{
+        margin:0;
+        font-size:1.75em;
+      }
+
+      .header-icon{
+        font-size:1.3em;
+      }
+
+      .did-modal-controls{
+
+        display:none;
+
+        ul{
+          list-style: none;
+          margin:0;
+        }
+
+        .did-modal-control{
+          font-size:1.5em;
+          color:@didColorLighterGrey;
+
+          &:hover{
+            color:@didColorGrey;
+            cursor:pointer;
+          }
+
+        }
+
+      }
+    }
+
+    .did-modal-body{
+      margin-bottom:@didSectionSpacing;
+      font-size:1.05em;
+
+      ul{
+
+        padding:0;
+        list-style:none;
+
+        li{
+          margin-bottom:5px;
+          padding: 5px 8px;
+          background-color:@didColorOffWhite;
+          color:@didColorGrey;
+          border: 1px @didColorWhite solid;
+          border-radius:@didBorderRadius;
+          width:100%;
+          display:table;
+
+          .modal-help-icon{
+            display:table-cell;
+            vertical-align:middle;
+            font-size:2em;
+            padding-right:5px;
+            i{
+              margin-right:5px;
+              color:@didColorBrandPrimary;
+            }
+          }
+
+          .modal-help-list-text{
+            text-align:left;
+            display:table-cell;
+            vertical-align:middle;
+            font-size:0.9em;
+          }
+
+
+        }
+      }
+
+    }
+
   }
 
 }
 
-.did-modal-status {
-  color: @didColorBlack;
-  background: @didColorModalBackground;
-  width: @didModalWidth;
-  margin: 0 auto;
-  position: relative;
-  margin-top: 20px;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid @didColorLightGrey;
-  border-radius: 5px;
-}
+
 
